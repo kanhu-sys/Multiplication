@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KanhuLenka.sys</title>
+    <link rel="shortcut icon" type="image/png" href="klenka.png">
+    <link rel="stylesheet" href="mul.css">
+    <script>
+        function myFunction(){
+            var i,j,res;
+            var k=1;
+            var m="Row";
+        var from = document.getElementById("from").value;
+        var to = document.getElementById("to").value;
+        var block = "<table>"
+        for(i=from;i<=to;i++){
+            block += "<tr>"
+            block +="<td id='inc'>"+k+"<br>"+m+"</td>";
+            for(j=1;j<=10;j++){
+                res = i*j;
+                block += "<td id='mul'>"+res;
+                block += "<br>";
+                block += j;
+                block += "<br>";
+                block += i+"</td>";
+            }
+            k++;
+            block += "</tr>"
+        }
+        block += "</table>"
+        document.getElementById("container").innerHTML = block;
+        }
+
+        function clearFunction(){
+            document.getElementById("container").innerHTML = "";
+        }
+    </script>
+</head>
+<body onload="myFunction()">
+    <div class="container-header">
+        <div class="block-1">
+            <!--<label for="from">FROM</label>-->
+        <input type="number" id="from" value="12" min="1" step="1">
+        &nbsp;
+        <label for="from">UPTO</label>
+        &nbsp;
+        <input type="number" id="to" value="15" min="5" step="5">
+        </div>
+        <div class="block-2">
+            <button type="button" id="show" onclick="myFunction()">Show Multiplications</button>
+        </div>
+        <div class="block-3">
+            <button type="button" id="clear" onclick="clearFunction()">Clear Multiplications</button>
+        </div>
+    </div>
+    <div id="container"></div>
+</body>
+</html>
