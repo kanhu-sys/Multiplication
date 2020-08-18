@@ -87,7 +87,7 @@ input[type=number]
 }
 #inc{
     background-color:#333;
-    font-size:25pt;
+    font-size:24pt;
     font-weight:bold;
     color:aqua;
 }
@@ -169,7 +169,7 @@ td{
 } 
 #inc{
     background-color:#333;
-    font-size:9pt;
+    font-size:9px;
     font-weight:bold;
     color:aqua;
 }
