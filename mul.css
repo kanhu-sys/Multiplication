@@ -132,7 +132,16 @@ label{
     color:#32cd32;
     font-weight:bold;
 }
-@media only screen and (max-width:500px){
+@media only screen and (max-width:500px){   
+    html,body{
+    margin:0 auto;
+    box-sizing: border-box;
+    background-image:url('Aug29.gif');
+    background-attachment:fixed;
+    background-size:cover;
+    background-repeat:no-repeat;
+    font-family:Arial, Helvetica, sans-serif;
+}
     .container-header{
     background-color:#ffffff;
     width:100%;
