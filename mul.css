@@ -142,14 +142,6 @@ label{
     background-repeat:no-repeat;
     font-family:Arial, Helvetica, sans-serif;
 }
-    .container-header{
-    background-color:#ffffff;
-    width:100%;
-    position:relative;
-    top:0;
-    left:0;
-    right:0;
-}
     .container-header .block-1{
         width:100%;
         background-color: white;
